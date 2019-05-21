@@ -1,16 +1,35 @@
-<!-- Links -->
-<li class="list-inline-item d-none d-lg-inline-block">
-  <%= link_to "Home", home_path, class: "g-font-size-12 text-uppercase g-px-10 g-py-15 u-link-v5 g-color-bronzish-opacity-0_7 g-color-bronzish--hover headerTextColor"%>
-</li>
-<li class="list-inline-item d-none d-lg-inline-block">
-  <%= link_to "Hoot", hoot_path, class: "g-font-size-12 text-uppercase g-px-10 g-py-15 u-link-v5 g-color-bronzish-opacity-0_7 g-color-bronzish--hover headerTextColor"%>
-</li>
-<li class="list-inline-item d-none d-lg-inline-block">
-  <%= link_to "Followers", followers_path, class: "g-font-size-12 text-uppercase g-px-10 g-py-15 u-link-v5 g-color-bronzish-opacity-0_7 g-color-bronzish--hover headerTextColor"%>
-</li>
-<li class="list-inline-item d-none d-lg-inline-block">
-  <%= link_to "Following", following_path, class: "g-font-size-12 text-uppercase g-px-10 g-py-15 u-link-v5 g-color-bronzish-opacity-0_7 g-color-bronzish--hover headerTextColor"%>
-</li>
+<div class="g-bg-main">
+  <div class="container g-py-5">
+    <ul class="list-inline d-flex align-items-center g-mb-0">
+      <li class="list-inline-item d-none d-lg-inline-block">
+        <%= image_tag "ReadSaverLogoTrans.png", id: "HeaderLogo" %>
+      </li>
+      <!-- Links -->
+      <li class="list-inline-item d-none d-lg-inline-block">
+        <%= link_to "Home", home_path, class: "g-font-size-12 text-uppercase g-px-10 g-py-15 u-link-v5 g-color-bronzish-opacity-0_7 g-color-bronzish--hover headerTextColor" %>
+      </li>
+      <li class="list-inline-item d-none d-lg-inline-block">
+        <%= link_to "Hoot", hoot_path, class: "g-font-size-12 text-uppercase g-px-10 g-py-15 u-link-v5 g-color-bronzish-opacity-0_7 g-color-bronzish--hover headerTextColor" %>
+      </li>
+      <li class="list-inline-item d-none d-lg-inline-block">
+        <%= link_to "Followers", followers_path, class: "g-font-size-12 text-uppercase g-px-10 g-py-15 u-link-v5 g-color-bronzish-opacity-0_7 g-color-bronzish--hover headerTextColor" %>
+      </li>
+      <li class="list-inline-item d-none d-lg-inline-block">
+        <%= link_to "Following", following_path, class: "g-font-size-12 text-uppercase g-px-10 g-py-15 u-link-v5 g-color-bronzish-opacity-0_7 g-color-bronzish--hover headerTextColor" %>
+      </li>
+
+      <li class="list-inline-item g-ml-15--lg ml-auto">
+        <form id="searchform-1" class="input-group u-shadow-v19 g-brd-primary--focus g-rounded-20">
+          <input class="form-control g-brd-none g-bg-white g-font-size-12 text-uppercase g-rounded-left-20 g-pl-20 g-py-9" type="text" placeholder="Search here ...">
+          <button class="btn input-group-addon d-flex align-items-center g-brd-none g-color-white g-bg-primary g-bg-primary-light-v1--hover g-font-size-13 g-rounded-right-20 g-transition-0_2" type="button">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </li>
+
+    </ul>
+  </div>
+</div>
 <!-- End Links -->
 <li class="list-inline-item g-pos-rel">
   <a id="jump-to-dropdown-invoker" class="d-block d-lg-none u-link-v5 g-color-white-opacity-0_7 g-color-white--hover g-font-size-12 text-uppercase g-py-7" href="#"
@@ -78,177 +97,167 @@
     </button>
     <!-- End Responsive Toggle Button -->
     <!-- Navigation -->
-<div id="navBar" class="collapse navbar-collapse">
-  <ul class="navbar-nav align-items-lg-center g-py-30 g-py-0--lg ml-auto">
-    <!-- Pages - Mega Menu -->
-    <li class="nav-item hs-has-mega-menu"
-        data-animation-in="fadeIn"
-        data-animation-out="fadeOut"
-        data-position="left">
-      <a id="mega-menu-label-1" class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="#!"
-         aria-haspopup="true"
-         aria-expanded="false">
-        Pages
-        <i class="hs-icon hs-icon-arrow-bottom g-font-size-11 g-ml-7"></i>
-      </a>
+    <div id="navBar" class="collapse navbar-collapse">
+      <ul class="navbar-nav align-items-lg-center g-py-30 g-py-0--lg ml-auto">
+        <!-- Pages - Mega Menu -->
+        <li class="nav-item hs-has-mega-menu"
+            data-animation-in="fadeIn"
+            data-animation-out="fadeOut"
+            data-position="left">
+          <a id="mega-menu-label-1" class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="#!"
+             aria-haspopup="true"
+             aria-expanded="false">
+            Pages
+            <i class="hs-icon hs-icon-arrow-bottom g-font-size-11 g-ml-7"></i>
+          </a>
 
-      <!-- Mega Menu -->
-      <div class="w-100 hs-mega-menu u-shadow-v39 g-brd-around g-brd-7 g-brd-white g-bg-secondary g-text-transform-none g-pa-30 g-pa-50--lg g-my-20 g-my-0--lg" aria-labelledby="mega-menu-label-1">
-        <span class="d-block h1 g-brd-bottom g-brd-2 g-brd-main pb-2 mb-5">Pages</span>
+          <!-- Mega Menu -->
+          <div class="w-100 hs-mega-menu u-shadow-v39 g-brd-around g-brd-7 g-brd-white g-bg-secondary g-text-transform-none g-pa-30 g-pa-50--lg g-my-20 g-my-0--lg" aria-labelledby="mega-menu-label-1">
+            <span class="d-block h1 g-brd-bottom g-brd-2 g-brd-main pb-2 mb-5">Pages</span>
 
-        <div class="row">
-          <div class="col-sm-6 col-lg-3">
-            <!-- Links -->
-            <ul class="list-unstyled g-pr-30 mb-0">
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-programs-1.html">
-                  Programs
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-future-students-1.html">
-                  Future Students
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-current-students-1.html">
-                  Current Students
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-            </ul>
-            <!-- End Links -->
+            <div class="row">
+              <div class="col-sm-6 col-lg-3">
+                <!-- Links -->
+                <ul class="list-unstyled g-pr-30 mb-0">
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-programs-1.html">
+                      Programs
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-future-students-1.html">
+                      Future Students
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-current-students-1.html">
+                      Current Students
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- End Links -->
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <!-- Links -->
+                <ul class="list-unstyled g-pr-30 mb-0">
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-faculty-and-staff-1.html">
+                      Faculty &amp; Staff
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-events-1.html">
+                      Events
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-alumni-1.html">
+                      Alumni
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- End Links -->
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <!-- Links -->
+                <ul class="list-unstyled g-pr-30 mb-0">
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-campus-life-1.html">
+                      Campus Life
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-research-1.html">
+                      Research
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-apply-1.html">
+                      Apply
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- End Links -->
+              </div>
+
+              <div class="col-sm-6 col-lg-3">
+                <!-- Links -->
+                <ul class="list-unstyled g-pr-30 mb-0">
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-contacts-1.html">
+                      Contacts
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-help-1.html">
+                      Help
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-signin-1.html">
+                      Signin
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                  <li class="py-2">
+                    <a class="d-flex g-brd-top g-brd-primary g-color-main g-color-primary--hover g-text-underline--none--hover g-pt-15 g-pb-5" href="../../index.html">
+                      Main
+                      <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
+                    </a>
+                  </li>
+                </ul>
+                <!-- End Links -->
+              </div>
+            </div>
           </div>
+          <!-- End Mega Menu -->
+        </li>
+        <!-- End Pages - Mega Menu -->
 
-          <div class="col-sm-6 col-lg-3">
-            <!-- Links -->
-            <ul class="list-unstyled g-pr-30 mb-0">
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-faculty-and-staff-1.html">
-                  Faculty &amp; Staff
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-events-1.html">
-                  Events
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-alumni-1.html">
-                  Alumni
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-            </ul>
-            <!-- End Links -->
-          </div>
-
-          <div class="col-sm-6 col-lg-3">
-            <!-- Links -->
-            <ul class="list-unstyled g-pr-30 mb-0">
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-campus-life-1.html">
-                  Campus Life
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-research-1.html">
-                  Research
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-apply-1.html">
-                  Apply
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-            </ul>
-            <!-- End Links -->
-          </div>
-
-          <div class="col-sm-6 col-lg-3">
-            <!-- Links -->
-            <ul class="list-unstyled g-pr-30 mb-0">
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-contacts-1.html">
-                  Contacts
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-help-1.html">
-                  Help
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-              <li class="py-2">
-                <a class="d-flex g-color-main g-color-primary--hover g-text-underline--none--hover g-py-5" href="page-signin-1.html">
-                  Signin
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-              <li class="py-2">
-                <a class="d-flex g-brd-top g-brd-primary g-color-main g-color-primary--hover g-text-underline--none--hover g-pt-15 g-pb-5" href="../../index.html">
-                  Main
-                  <i class="g-color-primary g-font-size-15 g-pos-rel g-top-5 ml-auto material-icons">arrow_forward</i>
-                </a>
-              </li>
-            </ul>
-            <!-- End Links -->
-          </div>
-        </div>
-      </div>
-      <!-- End Mega Menu -->
-    </li>
-    <!-- End Pages - Mega Menu -->
-
-    <li class="nav-item">
-      <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-programs-1.html">
-        Programs
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-future-students-1.html">
-        Future Students
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-current-students-1.html">
-        Current Students
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-faculty-and-staff-1.html">
-        Faculty &amp; Staff
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-events-1.html">
-        Events
-      </a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-pl-15--lg g-pr-0--lg g-py-10 g-py-30--lg" href="page-alumni-1.html">
-        Alumni
-      </a>
-    </li>
-
-    <li class="list-inline-item g-ml-15--lg ml-auto">
-      <form id="searchform-1" class="input-group u-shadow-v19 g-brd-primary--focus g-rounded-20">
-        <input class="form-control g-brd-none g-bg-white g-font-size-12 text-uppercase g-rounded-left-20 g-pl-20 g-py-9" type="text" placeholder="Search here ...">
-        <button class="btn input-group-addon d-flex align-items-center g-brd-none g-color-white g-bg-primary g-bg-primary-light-v1--hover g-font-size-13 g-rounded-right-20 g-transition-0_2" type="button">
-          <i class="fa fa-search"></i>
-        </button>
-      </form>
-    </li>
-
-  </ul>
-</div>
-<!-- End Navigation -->
-</nav>
+        <li class="nav-item">
+          <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-programs-1.html">
+            Programs
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-future-students-1.html">
+            Future Students
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-current-students-1.html">
+            Current Students
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-faculty-and-staff-1.html">
+            Faculty &amp; Staff
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-px-15--lg g-py-10 g-py-30--lg" href="page-events-1.html">
+            Events
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link g-color-primary--hover g-font-size-15 g-font-size-17--xl g-pl-15--lg g-pr-0--lg g-py-10 g-py-30--lg" href="page-alumni-1.html">
+            Alumni
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Navigation -->
+  </nav>

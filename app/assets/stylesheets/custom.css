@@ -32,6 +32,10 @@
     margin-bottom: 7.5px;
 }
 
-.fontColorBronzish {
+.fontColorBronzish{
     color: #6B663D !important;
+}
+
+.fontColorBronzishDarker {
+    color: #4A472A !important;
 }
