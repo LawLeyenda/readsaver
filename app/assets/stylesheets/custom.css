@@ -1,0 +1,27 @@
+/* header logo */
+
+#HeaderLogo{
+    width: 200px;
+    height: auto;
+}
+
+
+.g-color-bronzish-opacity-0_7, .g-color-bronzish-opacity-0_7--hover:hover {
+    color: rgba(107,102,61, 0.7) !important;
+}
+
+.u-block-hover:hover .g-color-bronzish--hover, .g-color-bronzish--hover:hover {
+    color: #6B663D !important;
+}
+/* log in page */
+.termsnConditions{
+    font-size: 7px;
+    margin-right: 5px;
+}
+
+#centerImage{
+    display: inline-block;
+    height: 50%;
+    width: 50%;
+    border-radius: 50%;
+}
