@@ -25,3 +25,13 @@
     width: 50%;
     border-radius: 50%;
 }
+
+#Logo1{
+    width: 225px;
+    height: auto;
+    margin-bottom: 7.5px;
+}
+
+.fontColorBronzish {
+    color: #6B663D !important;
+}
