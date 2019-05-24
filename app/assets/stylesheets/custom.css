@@ -39,3 +39,11 @@
 .fontColorBronzishDarker {
     color: #4A472A !important;
 }
+
+/* footer */
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
