@@ -2,7 +2,9 @@
   <div class="container g-py-5">
     <ul class="list-inline d-flex align-items-center g-mb-0">
       <li class="list-inline-item d-none d-lg-inline-block">
-        <%= image_tag "ReadSaverLogoTrans.png", id: "HeaderLogo" %>
+        <%=link_to root_path, method: :get do %>
+          <%=image_tag( "ReadSaverLogoTrans.png", id: "HeaderLogo") %>
+        <% end %>
       </li>
       <!-- Links -->
       <li class="list-inline-item d-none d-lg-inline-block">
@@ -25,6 +27,10 @@
             <i class="fa fa-search"></i>
           </button>
         </form>
+      </li>
+
+      <li class="list-inline-item d-none d-lg-inline-block">
+        <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "g-font-size-12 text-uppercase g-px-10 g-py-15 u-link-v5 g-color-bronzish-opacity-0_7 g-color-bronzish--hover headerTextColor" %>
       </li>
 
     </ul>

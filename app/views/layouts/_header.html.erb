@@ -3,7 +3,7 @@
   <div class="u-header__section">
     <!-- Topbar -->
 
-          <% if false %>
+          <% if user_signed_in? %>
             <%= render 'layouts/signedIn' %>
           <% else %>
             <%= render 'layouts/notSignedIn' %>

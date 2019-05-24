@@ -2,8 +2,10 @@
   <div class="container g-py-5">
     <!-- Links -->
     <ul class="list-inline d-flex align-items-center g-mb-0">
-      <li class="list-inline-item  d-lg-inline-block">
-        <%= image_tag "ReadSaverLogoTrans.png", id: "HeaderLogo" %>
+      <li class="list-inline-item d-lg-inline-block">
+        <%=link_to root_path, method: :get do %>
+          <%=image_tag( "ReadSaverLogoTrans.png", id: "HeaderLogo") %>
+        <% end %>
       </li>
       <div class="ml-auto" >
       <li class="list-inline-item d-none d-lg-inline-block g-ml-15--lg">
