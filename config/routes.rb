@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  devise_for :users, :controllers => { sessions: 'new_header' }
+  
+  devise_for :users
   
   as :user do
     get "/sign_in" => "devise/sessions#new" # custom path to login/sign_in
