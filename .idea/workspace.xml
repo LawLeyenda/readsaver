@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd20a01-7458-4289-8cdc-4f5c10acd2a8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,11 +39,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="n#footer#0;n#html#0;n#!!top" />
               </folding>
@@ -52,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            <state relative-caret-position="60">
+              <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -212,7 +211,7 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="499" />
+    <option name="x" value="494" />
     <option name="y" value="23" />
     <option name="width" value="1040" />
     <option name="height" value="1027" />
@@ -461,7 +460,7 @@
       <option name="presentableId" value="Default" />
       <updated>1558352337493</updated>
       <workItem from="1558352338842" duration="1120000" />
-      <workItem from="1558354148698" duration="66751000" />
+      <workItem from="1558354148698" duration="66978000" />
     </task>
     <task id="LOCAL-00001" summary="hello world">
       <created>1558367900095</created>
@@ -582,11 +581,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558763847218</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="debug test: see if website works w/0 body">
+      <created>1558791091776</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1558791091776</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67871000" />
+    <option name="totallyTimeSpent" value="68098000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -598,15 +604,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="173" width="1668" height="1027" extended-state="0" />
+    <frame x="494" y="23" width="1040" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14391144" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23446894" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49262536" weight="0.2973262" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50861007" visible="true" weight="0.3379679" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.50801605" visible="true" weight="0.3379679" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -616,7 +622,7 @@
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49966997" weight="0.32941177" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32941177" />
-      <window_info anchor="bottom" x="438" y="194" width="1217" height="630" id="Terminal" order="12" sideWeight="0.4913899" side_tool="true" visible="true" weight="0.3379679" />
+      <window_info anchor="bottom" x="438" y="194" width="1217" height="630" id="Terminal" order="12" sideWeight="0.49198398" side_tool="true" visible="true" weight="0.3379679" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -663,7 +669,8 @@
     <MESSAGE value="puma.rb??" />
     <MESSAGE value="remove the new_header from sessions controller." />
     <MESSAGE value="trying to see if it works without header" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying to see if it works without header" />
+    <MESSAGE value="debug test: see if website works w/0 body" />
+    <option name="LAST_COMMIT_MESSAGE" value="debug test: see if website works w/0 body" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/db/migrate/20190523004234_report_email_for_devise.rb">
@@ -905,13 +912,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/pages_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -973,11 +973,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="2" selection-start-line="20" selection-start-column="2" selection-end-line="20" selection-end-column="2" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="n#footer#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="5" />
         </state>
       </provider>
     </entry>
