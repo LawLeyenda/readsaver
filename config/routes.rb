@@ -2,6 +2,11 @@ Rails.application.routes.draw do
   
   devise_for :users
   
+  as :user do
+    get "/sign_in" => "devise/sessions#new" # custom path to login/sign_in
+    get "/sign_up" => "devise/registrations#new" # custom path to sign_up/registration
+  end
+  
   get '/home' => 'pages#home'
   get '/hoot' => 'pages#hoot'
   get '/login' => 'pages#login'
