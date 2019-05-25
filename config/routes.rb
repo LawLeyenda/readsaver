@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  
   devise_for :users
   
   as :user do
@@ -7,8 +6,6 @@ Rails.application.routes.draw do
     get "/sign_up" => "devise/registrations#new" # custom path to sign_up/registration
   end
   
-  
-  get 'users/new'
   get '/home' => 'pages#home'
   get '/hoot' => 'pages#hoot'
   get '/login' => 'pages#login'
