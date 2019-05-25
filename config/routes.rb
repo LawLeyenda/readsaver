@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   
-  devise_for :users
+  devise_for :user
   
   as :users do
     get "/sign_in" => "devise/sessions#new" # custom path to login/sign_in
