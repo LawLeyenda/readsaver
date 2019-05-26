@@ -1,5 +1,4 @@
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
   <li class="list-inline-item d-none d-lg-inline-block g-ml-15--lg">
     <div class="input-group">
       <%= f.email_field :email, autocomplete: "email", class: "form-control g-bg-white g-rounded-left-0 g-px-10 g-py-12", placeholder: "readsaver@email.com" %>

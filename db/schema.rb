@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_05_25_172558) do
 
-  create_table "users", force: :cascade do |t|
+  create_table "devise", force: :cascade do |t|
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

@@ -1,5 +1,6 @@
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <form>
+<h1> Hello world </h1>
+<form>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <!-- Signin -->
     <div id="login" style="display: none;">
       <div class="u-shadow-v35 g-bg-white rounded g-px-40 g-py-50">
@@ -56,6 +57,7 @@
       </div>
       <!-- End Signin -->
     </div>
+  <% end %>
   </form>
-<% end %>
+
 
