@@ -2,7 +2,9 @@
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <!-- Signin -->
     <div id="login">
+
       <div class="u-shadow-v35 g-bg-white rounded g-px-40 g-py-50">
+        <%=image_tag( "ReadSaverLogoTrans.png", id: "HeaderLogo", class: "center") %>
         <div class="field">
           <div class="g-mb-20">
             <label class="g-color-text-light-v1 g-font-weight-500">Email</label>

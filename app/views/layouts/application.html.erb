@@ -16,12 +16,11 @@
 
 <body>
 <% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
+  <p class="alert alert-danger"><%= flash[:alert] %></p>
 <% end %>
 <%= yield %>
 </body>
 
-<footer>
-  <%= render 'layouts/footer' %>
-</footer>
+<!-- <footer>
+</footer> shitty footy -->
 </html>

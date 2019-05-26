@@ -1,3 +1,9 @@
+//remove flash message after 1.5 seconds.
+$(function() {
+    setTimeout(function(){
+        $('.alert').slideUp(500);
+    }, 1500);
+});
 // sign in
 $(document).on('ready', function () {
     // initialization of header
@@ -42,4 +48,8 @@ $(document).on('ready', function () {
         $('#login').hide();
         $('#signup').hide();
     });
+
+
 });
+
+
