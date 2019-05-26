@@ -1,8 +1,7 @@
-<h1> Hello worlfd </h1>
 <form>
-    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
     <!-- Signin -->
-    <div id="login" style="display: none;">
+    <div id="login">
       <div class="u-shadow-v35 g-bg-white rounded g-px-40 g-py-50">
         <div class="field">
           <div class="g-mb-20">
@@ -13,7 +12,7 @@
                               <i class="icon-education-166 u-line-icon-pro"></i>
                             </div>
                           </span>
-              <%= f.email_field :email, autofocus: true, autocomplete: "email", class: "form-control g-brd-secondary-light-v2 g-bg-secondary g-bg-secondary-dark-v1--focus g-rounded-left-0 g-px-20 g-py-12", placeholder: "readsaver@email.com" %>
+              <%= f.email_field :email, autocomplete: "email", class: "form-control g-brd-secondary-light-v2 g-bg-secondary g-bg-secondary-dark-v1--focus g-rounded-left-0 g-px-20 g-py-12", placeholder: "readsaver@email.com" %>
             </div>
           </div>
         </div>
@@ -33,7 +32,7 @@
         </div>
 
         <div class="d-flex justify-content-between align-items-center">
-          <a class="g-color-text-light-v1 g-font-size-default" id="forgot-password-link" href="#!">Forgot
+          <a class="g-color-text-light-v1 g-font-size-default" id="forgot-password-link" href="">Forgot
             Password?</a>
           <div class="actions">
 
@@ -53,11 +52,11 @@
       </div>
       <div class="text-center g-pt-30">
         <p class="g-color-text-light-v1 g-font-size-default mb-0">Do not have an account?
-          <a class="g-font-size-default" id="login-link" href="#!">Create Account</a></p>
+          <a class="g-font-size-default" id="signup-link" href="">Create Account</a></p>
       </div>
       <!-- End Signin -->
     </div>
   <% end %>
-  </form>
+</form>
 
 

@@ -5,7 +5,9 @@
 
     <% if user_signed_in? %>
       <%= render 'layouts/signedIn' %>
-    <% else %>
+    <% elsif current_page?(login_path)%>
+      <%=render 'layouts/loginHeader' %>
+      <% else %>
       <%= render 'layouts/notSignedIn' %>
     <% end %>
 

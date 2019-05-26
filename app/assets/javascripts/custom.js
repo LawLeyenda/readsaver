@@ -24,15 +24,15 @@ $(document).on('ready', function () {
     // Signin Tab
     $('#signup-link, #go-back-link').on('click', function (e) {
         e.preventDefault();
-        $('#signup, #go-back-link').show();
-        $('').hide();
+        $('#login, #go-back-link').hide();
+        $('#signup').show();
         $('#forgot-password').hide();
     });
 
     $('#login-link').on('click', function (e) {
         e.preventDefault();
-        $('#login').show();
-        $('#signup, #go-back-link').hide();
+        $('#signup').hide();
+        $('#login, #go-back-link').show();
         $('#forgot-password').hide();
     });
 
