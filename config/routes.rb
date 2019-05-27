@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
   
-  Rails.application.routes.draw do
-    devise_for :users, controllers: {
-        sessions: 'users/sessions'
-    }
-  end
-  
-  
+    devise_for :users
+    
   get '/home' => 'pages#home'
   get '/hoot' => 'pages#hoot'
   get '/login' => 'pages#login'
