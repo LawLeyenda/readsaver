@@ -3,4 +3,11 @@ class CustomFailure < Devise::FailureApp
     redirect_to login_path
   end
   
+  def respond
+    if http_auth?
+      http_auth
+    else
+      redirect_to login_path
+    end
+  end
 end
