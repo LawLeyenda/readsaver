@@ -4,6 +4,7 @@ $(function() {
         $('.alert').slideUp(500);
     }, 1500);
 });
+
 // sign in
 $(document).on('ready', function () {
     // initialization of header
