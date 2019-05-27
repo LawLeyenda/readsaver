@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# Use this hook to configure devise mailer, warden hooks and so forth.
+# Use this hook to configure users mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   
@@ -15,14 +15,14 @@ Devise.setup do |config|
   # config.secret_key = '7814aa59ffef49b2da501d2a1ff9f11a5bfa7678277922c3870b816e2fce4a527138fbbe20dbf48842525b69bf4637e5733da2b4328355be7d36156aec915acd'
 
   # ==> Controller configuration
-  # Configure the parent class to the devise controllers.
+  # Configure the parent class to the users controllers.
   # config.parent_controller = 'DeviseController'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'please-change-me-at-config-initializers-users@example.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -214,7 +214,7 @@ Devise.setup do |config|
   # config.reset_password_keys = [:email]
 
   # Time interval you can reset your password with a reset password key.
-  # Don't put a too small interval or your devise won't have the time to
+  # Don't put a too small interval or your users won't have the time to
   # change their passwords.
   config.reset_password_within = 6.hours
 
@@ -229,20 +229,20 @@ Devise.setup do |config|
   # for default behavior) and :restful_authentication_sha1 (then you should set
   # stretches to 10, and copy REST_AUTH_SITE_KEY to pepper).
   #
-  # Require the `devise-encryptable` gem when using anything other than bcrypt
+  # Require the `users-encryptable` gem when using anything other than bcrypt
   # config.encryptor = :sha512
 
   # ==> Scopes configuration
   # Turn scoped views on. Before rendering "sessions/new", it will first check for
-  # "devise/sessions/new". It's turned off by default because it's slower if you
+  # "users/sessions/new". It's turned off by default because it's slower if you
   # are using only default views.
   # config.scoped_views = false
 
   # Configure the default scope given to Warden. By default it's the first
-  # devise role declared in your routes (usually :user).
+  # users role declared in your routes (usually :user).
   # config.default_scope = :user
 
-  # Set this configuration to false if you want /devise/sign_out to sign out
+  # Set this configuration to false if you want /users/sign_out to sign out
   # only the current scope. By default, Devise signs out all scopes.
   # config.sign_out_all_scopes = true
 
@@ -285,8 +285,8 @@ Devise.setup do |config|
   # config.router_name = :my_engine
   #
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
-  # so you need to do it manually. For the devise scope, it would be:
-  # config.omniauth_path_prefix = '/my_engine/devise/auth'
+  # so you need to do it manually. For the users scope, it would be:
+  # config.omniauth_path_prefix = '/my_engine/users/auth'
 
   # ==> Turbolinks configuration
   # If your app is using Turbolinks, Turbolinks::Controller needs to be included to make redirection work correctly:
