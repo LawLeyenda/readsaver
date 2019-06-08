@@ -17,4 +17,5 @@ class PagesController < ApplicationController
   
   def following
   end
+  
 end

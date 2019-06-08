@@ -54,3 +54,6 @@
     margin-right: auto;
     width: 50%;
 }
+.password_field_css{
+    max-width: 222px !important;
+}
