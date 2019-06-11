@@ -58,3 +58,8 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* hoot button post */
+#hooterButton{
+    background: darkred;
+}
