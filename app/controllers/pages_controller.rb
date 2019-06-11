@@ -3,7 +3,6 @@ class PagesController < ApplicationController
   end
   
   def hoot
-  
   end
   
   def login

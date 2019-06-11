@@ -12,5 +12,13 @@ class ApplicationController < ActionController::Base
   def get_first_name
     current_user.name.split(" ")[0].capitalize
   end
+
+  def logged_in_user
+    unless user_signed_in?
+      store_location
+      flash[:danger] = "Please log in."
+      redirect_to login_url
+    end
+  end
 end
 
