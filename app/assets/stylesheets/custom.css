@@ -40,13 +40,7 @@
     color: #4A472A !important;
 }
 
-/* footer */
 
-#footer {
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-}
 /*center image */
 .center {
     display: block;
@@ -56,4 +50,11 @@
 }
 .password_field_css{
     max-width: 222px !important;
+}
+
+footer {
+    position: fixed;
+    height: XXX;
+    bottom: 0;
+    width: 100%;
 }

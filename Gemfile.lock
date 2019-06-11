@@ -273,6 +273,7 @@ DEPENDENCIES
   coffee-rails (~> 4.2)
   devise
   font-awesome-rails
+  guard
   guard-livereload (~> 2.5)
   jbuilder (~> 2.5)
   jquery-rails
