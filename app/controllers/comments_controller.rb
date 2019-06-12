@@ -20,7 +20,7 @@ class CommentsController < ApplicationController
   end
 
   def index
-    @comments = Comment.all.order(created_at: :desc) # add this line
+    @comment = Comment.all
   end
   private
 
