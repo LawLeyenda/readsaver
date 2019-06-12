@@ -6,10 +6,10 @@ class CommentsController < ApplicationController
     @comment = current_user.comments.build(comment_params)
     if @comment.save
       flash[:success] = "Comment Hooted!"
-      redirect_to root_url
+      redirect_to hoot_url
     else
       @feed_items = []
-      redirect_to root_url
+      redirect_to hoot_url
     end
   end
 
@@ -18,7 +18,10 @@ class CommentsController < ApplicationController
     flash[:success] = "Comment DeHooted"
     redirect_back(fallback_location: root_url)
   end
-  
+
+  def index
+    @comments = Comment.all.order(created_at: :desc) # add this line
+  end
   private
 
   def comment_params

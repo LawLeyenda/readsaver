@@ -10,8 +10,9 @@ Rails.application.routes.draw do
   get '/followers' => 'pages#followers'
   get '/following' => 'pages#following'
   get '/settings' => 'pages#settings'
-  root 'pages#home'
-
+    
+    post '/likes/:post_id', to: 'posts#add_like', as: "add_likes"
+    root 'comments#index'
 
   resources :comments,          only: [:create, :destroy]
 end
