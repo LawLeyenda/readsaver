@@ -3,6 +3,7 @@ class PagesController < ApplicationController
   end
   
   def hoot
+    @comments = Comment.all
   end
   
   def login

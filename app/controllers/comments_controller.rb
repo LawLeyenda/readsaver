@@ -8,7 +8,6 @@ class CommentsController < ApplicationController
       flash[:success] = "Comment Hooted!"
       redirect_to hoot_url
     else
-      @feed_items = []
       redirect_to hoot_url
     end
   end
@@ -20,7 +19,7 @@ class CommentsController < ApplicationController
   end
 
   def index
-    @comment = Comment.all
+    @comments = Comment.all
   end
   private
 

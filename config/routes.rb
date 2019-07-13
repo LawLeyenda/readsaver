@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   
     devise_for :users
-    
+    resources :users do
+      resources :comments
+    end
   get '/home' => 'pages#home'
   get '/hoot' => 'pages#hoot'
 
@@ -14,8 +16,5 @@ Rails.application.routes.draw do
     post '/likes/:post_id', to: 'posts#add_like', as: "add_likes"
     root 'posts#index'
 
-    resources :comments
-    resources :users do
-   
-    end
+
 end

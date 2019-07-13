@@ -1,7 +1,9 @@
 <!-- Comments Form -->
 <%=render 'shared/comment_form' %>
 
-
+<% @comments.each do |c| %>
+  <%= c.id %>
+<% end %>
 
 <div class="js-scrollbar g-height-350 g-brd-around g-brd-gray-light-v4 rounded g-pa-20 g-mb-30">
   <!-- Comments -->
@@ -37,7 +39,7 @@
       </ul>
     </div>
   </div>
-<%= render 'comments/index' %>
+
   <div class="media g-brd-top g-brd-gray-light-v4 g-pt-30 g-ml-40 g-mb-30">
     <!-- <img class="d-flex g-width-60 g-height-60 rounded-circle g-mt-3 g-mr-15" src="../../assets/img-temp/100x100/img4.jpg" alt="Image Description"> -->
     <div class="media-body">
