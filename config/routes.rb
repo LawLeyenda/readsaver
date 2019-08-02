@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     end
   get '/home' => 'pages#home'
   get '/hoot' => 'pages#hoot'
-
+  get '/comments' => 'comments#comment'
   get '/login' => 'pages#login'
   get '/book' => 'pages#book'
   get '/followers' => 'pages#followers'
